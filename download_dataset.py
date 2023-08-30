@@ -1,3 +1,3 @@
-from opendatasets import download
+# from opendatasets import download
 
-download("https://www.kaggle.com/datasets/grassknoted/asl-alphabet")
+# download("https://www.kaggle.com/datasets/grassknoted/asl-alphabet")
