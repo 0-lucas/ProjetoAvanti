@@ -11,7 +11,7 @@ random.seed(0)
 
 
 def redimensionar_dataset(
-    imagens_restantes, path="asl-alphabet/asl_alphabet_train/asl_alphabet_train/"
+        imagens_restantes, path="asl-alphabet/asl_alphabet_train/asl_alphabet_train/"
 ):
     for pasta in os.scandir(path):
         imagens = os.listdir(pasta)
@@ -19,12 +19,12 @@ def redimensionar_dataset(
 
         if imagens_na_pasta > imagens_restantes:
             num_files_to_delete = imagens_na_pasta - imagens_restantes
+            print(f"Dataset redimensionado para {imagens_restantes} amostras por classe.")
 
             for i in range(num_files_to_delete):
                 imagem_deletar = pasta.path + "/" + random.choice(imagens)
                 os.remove(imagem_deletar)
                 imagens.remove(os.path.basename(imagem_deletar))
-            print(f"Dataset redimensionado para {imagens_restantes} amostras por classe.")
 
         else:
             print(f"Dataset já possui {imagens_restantes} amostras por classe.")
@@ -56,6 +56,7 @@ def processar_imagem(img: Tensor, label: Tensor):
 def reajustar_imagem(img, label):
     img = reshape(img, shape=(32, 200, 200, 3))
     return img, label
+
 
 def aplicar_todas_imagens(path):
     def preprocessar_imagem(imagem_cv2):
