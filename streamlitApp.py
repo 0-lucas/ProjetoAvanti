@@ -11,9 +11,14 @@ class_mapping = dict(enumerate(class_names))
 
 webcam = cv2.VideoCapture(0)
 
-st.title("Classificação de ASL")
+col1, col2 = st.columns([0.6, 0.4])
 
-frame_placeholder = st.empty()
+col2.subheader("Tabela de conversão alfabética para ASL")
+col2.image(cv2.imread("tabela_conversao.jpg"), use_column_width="always")
+
+col1.subheader("Classificação de Linguagem de Sinais - ASL")
+
+frame_placeholder = col1.empty()
 
 while True:
     # Lê um único frame.
@@ -29,7 +34,7 @@ while True:
 
     prediction = modelo.predict(img, verbose=0)
 
-    predicted_class_number = int(np.argmax(prediction, axis=1))
+    predicted_class_number = np.argmax(prediction, axis=1).item()
     predicted_class_letter = class_mapping.get(predicted_class_number)
     accuracy_of_prediction = float(np.max(prediction))
 
