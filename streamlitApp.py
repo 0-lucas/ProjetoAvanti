@@ -9,7 +9,7 @@ class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
                'V', 'W', 'X', 'Y', 'Z', 'apagar', 'vazio', 'espaço']
 class_mapping = dict(enumerate(class_names))
 
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture(1)
 
 col1, col2 = st.columns([0.6, 0.4])
 
