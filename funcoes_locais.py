@@ -88,7 +88,7 @@ def video_prediction(capture):
 
     class_mapping = dict(enumerate(class_names))
 
-    prediction_model = load_model("mymodel.keras")
+    prediction_model = load_model("modelo_treinado.keras")
 
     # Converte o frame lido para RGB.
 

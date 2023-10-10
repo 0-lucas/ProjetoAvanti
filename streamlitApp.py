@@ -5,7 +5,7 @@ from funcoes_locais import video_prediction
 
 st.title("Classificação de Linguagem de Sinais - ASL")
 st.sidebar.title("Tabela de Conversão ASL - Alfabético")
-st.sidebar.image(cv2.imread("tabela_conversao.jpg"), use_column_width=True)
+st.sidebar.image(cv2.imread("documentos/tabela_conversao.jpg"), use_column_width=True)
 
 webrtc_streamer(
     key="example",
