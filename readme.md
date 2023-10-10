@@ -22,6 +22,10 @@ O método é encontrado no notebook de pré-processamento.
 O deploy foi realizado em Streamlit, podendo ser acessado [clicando aqui](https://classificacaoasl.streamlit.app). No entanto, por questões de performance ou incompatibilidade, se recomenda realizar a execução pelo arquivo *execucao_local.py*.  
 Em breve Web App será reformulado, com desempenho e design em mente.
 
+
+![teste_h](https://github.com/0-lucas/ProjetoAvanti/assets/139001038/d9b313a2-33eb-4ebe-beb1-7648f69d322d) ![teste_i](https://github.com/0-lucas/ProjetoAvanti/assets/139001038/c964d76c-a893-4614-a46d-6f466d1411f3) ![Screenshot_2](https://github.com/0-lucas/ProjetoAvanti/assets/139001038/01b52eb9-f27e-458f-bad0-0f4c31917cb9)
+
+
 ## Contribuição
 
 Solicitações de pull são muito bem-vindas!  
