@@ -82,7 +82,8 @@ def aplicar_todas_imagens(path):
 
 
 def video_prediction(capture):
-    class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+    class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
+                   'T',
                    'U', 'V', 'W', 'X', 'Y', 'Z', 'apagar', 'vazio', 'espaço']
 
     class_mapping = dict(enumerate(class_names))
